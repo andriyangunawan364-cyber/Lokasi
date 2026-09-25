@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Minda Cell sebagai patokan lokasi Rental PS dan Bioskop Mini di Rawabadak Utara, Koja, Jakarta Utara.">
+  <title>Minda Cell | Rental PS & Bioskop Mini</title>
+  <link rel="stylesheet" href="lokasi.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="#beranda" class="logo">
+      <span class="logo-icon">📍</span>
+      <span><b>MINDA CELL</b><small>Location Point</small></span>
+    </a>
+    <nav>
+      <a href="#peta">Peta</a>
+      <a href="#patokan">Patokan</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#bantuan">Bantuan</a>
+    </nav>
+    <button id="themeToggle" class="theme-btn" aria-label="Ganti tema">☀️</button>
+  </header>
+
+  <main id="beranda">
+    <section class="hero">
+      <div class="hero-text">
+        <div class="tag"><i></i> PATOKAN LOKASI</div>
+        <h1>Minda Cell,<br><span>titik temu</span> Rental PS<br>& Bioskop Mini.</h1>
+        <p class="subtitle">
+          Website peta lokasi yang membantu pengunjung menemukan Minda Cell
+          dan menggunakannya sebagai patokan menuju area Rental PS dan Bioskop Mini.Di lantai 2
+        </p>
+
+        <div class="address-box">
+          <div class="address-icon">📍</div>
+          <div class="address-content">
+            <b>Minda Cell</b>
+            <p>Jl. B Terusan No.16 3, RT.5/RW.11, Rawabadak Utara, Kec. Koja, Jakarta Utara, DKI Jakarta 14230</p>
+          </div>
+          <button id="copyAddress" class="copy-btn">Salin</button>
+        </div>
+
+        <div class="actions">
+          <a id="routeLink" class="btn btn-primary" target="_blank" rel="noopener">🧭 Buka Rute</a>
+          <a id="mapsLink" class="btn btn-secondary" target="_blank" rel="noopener">🗺️ Google Maps</a>
+        </div>
+        <p class="note">Peta online memerlukan koneksi internet. Tombol rute membuka pencarian alamat pada Google Maps.</p>
+      </div>
+
+      <div class="map-card">
+        <div class="map-header">
+          <div>
+            <span class="status"><i></i> AREA LOKASI</span>
+            <h2>Minda Cell</h2>
+          </div>
+          <span class="area">KOJA • JAKARTA UTARA</span>
+        </div>
+
+        <div class="map-frame">
+          <iframe
+            title="Peta Rawabadak Utara Koja Jakarta Utara"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=106.887%2C-6.118%2C106.918%2C-6.094&layer=mapnik"
+            loading="lazy">
+          </iframe>
+          <div class="map-label">
+            <strong>📍 Minda Cell</strong>
+            <span>Patokan Rental PS & Bioskop Mini</span>
+          </div>
+        </div>
+
+        <div class="map-footer">
+          <span>OpenStreetMap • Area Koja</span>
+          <button id="osmBtn">Buka peta penuh ↗</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-stats">
+      <div><strong>01</strong><span>Patokan utama</span></div>
+      <div><strong>02</strong><span>Rental PS</span></div>
+      <div><strong>03</strong><span>Bioskop Mini</span></div>
+      <div><strong>04</strong><span>Food Corner</span></div>
+    </section>
+
+    <section id="peta" class="section">
+      <div class="section-heading">
+        <div>
+          <span class="tag">PETA & NAVIGASI</span>
+          <h2>Alamat yang mudah dicari</h2>
+        </div>
+        <p>Gunakan alamat lengkap ini sebagai kata kunci pada aplikasi peta. Anda juga dapat menyalin alamat untuk dibagikan kepada pengunjung.</p>
+      </div>
+
+      <div class="grid-3">
+        <article class="card large">
+          <div class="card-icon">📍</div>
+          <h3>Minda Cell</h3>
+          <p class="muted">Patokan lokasi untuk pengunjung yang akan menuju Rental PS dan Bioskop Mini.</p>
+          <div class="address-lines">
+            <span>Jl. B Terusan No.16 3</span>
+            <span>RT.5/RW.11, Rawabadak Utara</span>
+            <span>Kec. Koja, Jakarta Utara</span>
+            <span>DKI Jakarta 14230</span>
+          </div>
+          <div class="card-buttons">
+            <button id="shareBtn" class="outline">↗ Bagikan</button>
+            <button id="copyBtn2" class="outline">▣ Salin alamat</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🧭</div>
+          <h3>Urutan patokan</h3>
+          <div class="steps">
+            <div><b>1</b><span>Cari Minda Cell</span></div>
+            <div><b>2</b><span>Gunakan sebagai titik temu</span></div>
+            <div><b>3</b><span>Lanjut ke Rental PS</span></div>
+            <div><b>4</b><span>Atau menuju Bioskop Mini</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🌐</div>
+          <h3>Peta alternatif</h3>
+          <p class="muted">Lihat area sekitar menggunakan OpenStreetMap.</p>
+          <a id="osmSearch" class="text-link" target="_blank" rel="noopener">Cari alamat di OpenStreetMap →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="patokan" class="section">
+      <div class="section-heading single">
+        <div>
+          <span class="tag">ALUR PENGUNJUNG</span>
+          <h2>Satu patokan, beberapa tujuan</h2>
+        </div>
+      </div>
+
+      <div class="route-card">
+        <div class="route-node active"><span>1</span><b>Minda Cell</b><small>Patokan utama</small></div>
+        <div class="route-line"></div>
+        <div class="route-node"><span>2</span><b>Rental PS</b><small>Area bermain</small></div>
+        <div class="route-line"></div>
+        <div class="route-node"><span>3</span><b>Bioskop Mini</b><small>Area menonton</small></div>
+        <div class="route-line"></div>
+        <div class="route-node"><span>4</span><b>Food Corner</b><small>Makan & minum</small></div>
+      </div>
+    </section>
+
+    <section id="layanan" class="section">
+      <div class="section-heading single">
+        <div>
+          <span class="tag">FASILITAS</span>
+          <h2>Rental PS & Bioskop Mini</h2>
+        </div>
+      </div>
+
+      <div class="services">
+        <article class="service">
+          <div class="service-icon">🎮</div>
+          <span>01</span>
+          <h3>Rental PS</h3>
+          <p>Area bermain PS yang dapat dijadikan tujuan setelah menemukan Minda Cell.</p>
+        </article>
+        <article class="service">
+          <div class="service-icon">🎬</div>
+          <span>02</span>
+          <h3>Bioskop Mini</h3>
+          <p>Area menonton mini untuk pengunjung yang ingin menikmati film bersama.</p>
+        </article>
+        <article class="service">
+          <div class="service-icon">🍔</div>
+          <span>03</span>
+          <h3>Food Corner</h3>
+          <p>Pesan makanan dan minuman untuk menemani sesi bermain atau menonton.</p>
+        </article>
+        <article class="service">
+          <div class="service-icon">📶</div>
+          <span>04</span>
+          <h3>Wi-Fi</h3>
+          <p>Informasi Wi-Fi dapat ditampilkan di website utama usaha untuk pengunjung.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="bantuan" class="help">
+      <div>
+        <span class="tag">BANTUAN LOKASI</span>
+        <h2>Simpan alamat ini untuk pelanggan.</h2>
+        <p>Jika titik pin resmi sudah dikonfirmasi, alamat dapat dipadukan dengan koordinat GPS agar navigasi semakin presisi.</p>
+      </div>
+      <div class="help-actions">
+        <a id="helpRoute" class="btn btn-primary" target="_blank" rel="noopener">🧭 Navigasi</a>
+        <button id="helpShare" class="btn btn-secondary">↗ Bagikan</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><b>MINDA CELL</b> <span>• Location Point</span></div>
+    <p>© <span id="year"></span> Minda Cell • Rental PS & Bioskop Mini</p>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+  <script src="lokasi.js"></script>
+</body>
+</html>
